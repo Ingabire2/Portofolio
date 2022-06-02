@@ -1,0 +1,255 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+html{
+    font-size: 62.5%;
+    font-family:'Poppins',sans-serif;
+}
+body{
+    background:rgb(3, 3, 3) ;
+}
+
+:root {
+
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    
+}
+
+.header{
+    position: fixed;
+    z-index: 1;
+
+}
+  .closebtn {
+    position: absolute;
+    top: 2rem;
+    left: 0rem;
+    font-size: larger;
+
+  } 
+.menu {
+    height: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 7rem; 
+    left: 6rem;
+    background-color:#111;
+    padding-top: 6rem;
+    overflow-x: hidden;
+    transition: 0.5s;
+    
+  }
+  .menu a {
+    padding: 24px 8px 8px 16px;
+    text-decoration: none;
+    font-size: 2.2rem;
+    color:white;
+    display: block;
+    transition: 0.3s;
+    margin-left: 4rem;
+    line-height:5rem;
+    text-transform: uppercase;
+    
+  }
+  .menu a.active {
+    color: var(--yellow);
+  }
+  
+
+  nav{
+    color:#fd7e14;
+    width:100%;   
+}
+
+.nav-link:hover{
+    color:var(--yellow);
+}
+
+#menu-icon{
+    position: absolute;
+    top:7.5rem;
+    left:6rem;
+    color:white;
+    cursor: pointer;
+    content: "";
+    background-color: #535455;
+    border-radius: 50%;
+    height: 6rem;
+    width: 6rem;
+}
+
+.home{
+  
+    width: 100%;
+   height: 100vh;
+   position:fixed;
+  
+}
+.image{
+    position: absolute;
+    
+    width: 40%;
+    height: 95%;
+    bottom:0rem;
+    left: 28rem;
+    object-fit: cover;
+  }
+.home-title{
+    position: absolute;
+    top: 28rem;
+    color: white;
+    right: 8rem;
+    
+}
+.home-paragraph{
+    font-size: 2.2rem;
+    line-height: 2;
+    padding: 0 10rem;
+}
+button{
+    width: 40rem;
+    font-size: 20px;
+    width:30%;
+}
+.hi{
+    font-weight: lighter;
+    font-size:3rem;
+    padding: 0 10rem;
+}
+.Iam{
+    font-size:5rem;
+    color:white;
+    padding: 0 10rem;
+}
+
+.More{
+    display: inline-block;
+    background-color: #ffc107;
+    font-weight: bold;
+    height: 6rem;
+    border-radius: 60px;
+    color:white;
+    margin-left:12rem;
+    width: 32rem;
+}
+.portofolio{
+    background-color:transparent;
+    height: 6rem;
+    border-radius: 60rem;
+    color:rgb(255, 174, 0) ;
+    border:2px solid rgb(255, 174, 0);
+    font-weight: bold;
+    width: 32rem;
+}
+
+.settings{
+    font-size: 5rem;
+    background-color:white;
+    color: black;
+    margin: -25rem 0rem 39rem 28rem;
+    position: absolute;
+}
+.About{
+    height: 100vh;
+    width: 100%;
+}
+.me{
+    margin:-90rem 10rem ;
+    text-align: center;
+    padding-bottom: 80rem;
+    font-size: 68px;
+}
+.p1{
+    font-size: 2.2rem;
+    margin-top: 10rem;
+    font-weight: 200;
+}
+.bi{
+    display:block;
+    background-color:var(--yellow);
+    width: 90px;
+    margin-top:-.9rem;
+    margin-left: 52rem;
+}
+ .bi2{
+
+    background-color:gray;
+    width: 140rem;
+     margin:  5rem 30rem;
+} 
+
+  #image1{
+      width:60rem;
+      
+
+  }
+  .about-heading{
+    color: white;
+    text-align: center;
+    justify-content: center;
+    margin: 6rem auto;
+    
+}
+  .about-title{
+    position: relative;
+    margin:25rem 10rem 0rem 30rem;
+    width:520px;
+    
+  }
+ 
+ .rel .about-title:before{
+      
+      position:absolute;
+      content:"";
+      top:6rem;
+      bottom:3px;
+      right:-90px;
+      left:5rem;
+      z-index: -1;
+      transform: translate3d(26px, 26px,-26px);
+      border:6px solid var(--yellow);
+     
+  }
+.about-adress p{
+    display: flex;
+    color:rgba(255, 255, 255, 0.89);
+    font-size:26px;
+    padding: 5rem 4rem 0rem 100rem;
+    line-height: 7.5px;
+
+}
+.adress1{
+    margin-top: 12rem;
+}
+.adress2{
+    padding-left: 40rem;
+    margin-top: -35rem;
+}
+.about-more{
+    margin:5rem 20rem 20rem 100rem;
+    width: 40rem;
+
+}
