@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Open+Sans:ital,wght@0,300;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700
+      &family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet" />
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body >
+    <header class="header">
+           
+        <nav  >
+        <div class="menu"id="myMenu">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><ion-icon name="close-outline" style="font-size:40px;"></ion-icon></a>
+          <a href="index.html" class="nav-link "><ion-icon name="home"></ion-icon>&nbsp;Home</a>
+          <a href="about.html" class="nav-link"><ion-icon name="person"></ion-icon>&nbsp;About</a>
+          <a href="portofolio.html" class="nav-link"><ion-icon name="calendar"></ion-icon>&nbsp;Portofolio </a>
+          <a href="" class="nav-link active"><ion-icon name="chatbubbles"></ion-icon>&nbsp;Contact</a>
+          <a href="blog.html" class="nav-link "><ion-icon name="mail-unread"></ion-icon>&nbsp;Blog</a>
+        </div>
+      </nav>
+      <!-- <label for="menu-icon"></label> -->
+      <ion-icon name="menu-outline"  id="menu-icon"style="cursor:pointer" onclick="openNav()"></ion-icon>
+       
+    </header> 
+    <div class="about-heading">
+        <h1 class="get"style="font-size: 75px; margin-top:10rem ">GET <span style="color: var(--yellow)">IN TOUCH</h1>
+          <h2 class="c1" style=" font-size: 2.2rem;">I’M ALWAYS OPEN TO DISCUSSING PRODUCT DESIGN WORK OR PARTNERSHIPS.</h2> 
+      
+        </div><hr class="hr1"><hr class="hr2">
+      <div class="contact-space">
+      <div class="class-left"style="color:white">
+          <p> Phone </p> <span><ion-icon name="logo-whatsapp" style="color:var(--yellow);"></ion-icon>&nbsp;&nbsp;
+        +216 21 184 010</span>
+          <p> Email </p><span><ion-icon name="mail-outline"style="color:var(--yellow);"></ion-icon>&nbsp;&nbsp;info@daria.ua</span>
+          <p> Instagram </p><span><ion-icon name="logo-instagram"style="color:var(--yellow);"></ion-icon>&nbsp;&nbsp;
+            daria.198</span>
+          <p> Dribbble</p><span><ion-icon name="logo-dribbble"style="color:var(--yellow);"></ion-icon>&nbsp;&nbsp;daria.dribble</span>
+          <br><br> <p> Social Profiles </p> <span style="color:var(--yellow);font-size:36px;border-radius: 50%;"><ion-icon name="logo-facebook"></ion-icon>
+            &nbsp;&nbsp;<ion-icon name="logo-twitter"></ion-icon>&nbsp;&nbsp;<ion-icon name="logo-youtube"></ion-icon>&nbsp;&nbsp;<ion-icon name="logo-dribbble"></ion-icon></span>&nbsp;&nbsp;
+            
+      </div>
+      <div class="class-right">
+         <p style="font-size:2.8rem; color:white; float:right">If you have any suggestion, project or even you want to say Hello.. please fill out the form below and I will reply you shortly.</p>
+          <form action="" style="position: relative; left:160px;">
+           
+            <input type="text" placeholder=" YOUR NAME" required style="background-color:rgba(41, 41, 41, 0.473) ;border-color: rgb(172, 172, 172);
+         border-radius: 30rem;height: 6rem; width: 45rem;padding:3.5rem;top:10rem; font-size: 2rem;"> <br>
+          <input type="text" placeholder="YOUR EMAIL" required style="background-color:rgba(41, 41, 41, 0.473) ;border-color: rgb(172, 172, 172);
+          border-radius: 30rem;height: 6rem; width: 43rem;padding: 3.5rem;position:absolute;left: 48rem; top: 16rem;font-size: 2rem"> <br>
+          <textarea name="msg" id="messag" cols="30" rows="6"style="background-color:rgba(41, 41, 41, 0.473) ;border-color: rgb(172, 172, 172);
+          border-radius: 3rem;height: 20rem; width: 92rem;padding: 3.5rem;font-size: 2rem;color:gray;">YOUR MESSAGE</textarea>
+          <button class="More "style="position:fixed; top:80rem;right:99rem;"><ion-icon name="person"></ion-icon> &nbsp;SEND MESSAGE</button> 
+        </form>
+        </div>
+    </div>
+      <script>
+        function openNav() {
+          document.getElementById("myMenu").style.width = "500px";
+        
+        }
+        
+        function closeNav() {
+          document.getElementById("myMenu").style.width = "0";
+       
+        }
+        </script> 
+</html>

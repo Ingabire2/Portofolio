@@ -45,44 +45,39 @@ body{
 }
   .closebtn {
     position: absolute;
-    top: 2rem;
+    top: 0rem;
     left: 0rem;
     font-size: larger;
 
   } 
 .menu {
-    height: 50%;
-    position: fixed;
+    
+    position: relative;
     z-index: 1;
     top: 7rem; 
-    left: 6rem;
+    left: 0rem;
+    height: 100%;
     background-color:#111;
     padding-top: 6rem;
     overflow-x: hidden;
     transition: 0.5s;
-    
+    width: 0;
   }
   .menu a {
-    padding: 24px 8px 8px 16px;
+    padding: 8px 8px 8px 58px;
     text-decoration: none;
     font-size: 2.2rem;
     color:white;
     display: block;
     transition: 0.3s;
-    margin-left: 4rem;
     line-height:5rem;
     text-transform: uppercase;
-    
+    /* position: absolute; */
   }
   .menu a.active {
     color: var(--yellow);
   }
   
-
-  nav{
-    color:#fd7e14;
-    width:100%;   
-}
 
 .nav-link:hover{
     color:var(--yellow);
@@ -97,8 +92,8 @@ body{
     content: "";
     background-color: #535455;
     border-radius: 50%;
-    height: 6rem;
-    width: 6rem;
+    font-size: 5rem;
+    padding: 1.8rem;
 }
 
 .home{
@@ -106,15 +101,15 @@ body{
     width: 100%;
    height: 100vh;
    position:fixed;
-  
+   padding:0 10rem;
 }
 .image{
-    position: absolute;
+    position: relative;
     
-    width: 40%;
-    height: 95%;
-    bottom:0rem;
-    left: 28rem;
+    width: 50%;
+    /* height: 90%; */
+    top:0rem;
+    left: 12rem;
     object-fit: cover;
   }
 .home-title{
@@ -126,7 +121,7 @@ body{
 }
 .home-paragraph{
     font-size: 2.2rem;
-    line-height: 2;
+    line-height: 2.2;
     padding: 0 10rem;
 }
 button{
@@ -148,11 +143,11 @@ button{
 .More{
     display: inline-block;
     background-color: #ffc107;
-    font-weight: bold;
+    font-weight: 500;
     height: 6rem;
     border-radius: 60px;
     color:white;
-    margin-left:12rem;
+    margin-left:10rem;
     width: 32rem;
 }
 .portofolio{
@@ -161,7 +156,7 @@ button{
     border-radius: 60rem;
     color:rgb(255, 174, 0) ;
     border:2px solid rgb(255, 174, 0);
-    font-weight: bold;
+    font-weight:600;
     width: 32rem;
 }
 
@@ -169,13 +164,15 @@ button{
     font-size: 5rem;
     background-color:white;
     color: black;
-    margin: -25rem 0rem 39rem 28rem;
+    margin: -25rem 0rem 39rem 22rem;
     position: absolute;
 }
-.About{
-    height: 100vh;
+.about{
+
     width: 100%;
+    
 }
+
 .me{
     margin:-90rem 10rem ;
     text-align: center;
@@ -183,29 +180,38 @@ button{
     font-size: 68px;
 }
 .p1{
+  position: relative;
     font-size: 2.2rem;
     margin-top: 10rem;
     font-weight: 200;
 }
 .bi{
-    display:block;
-    background-color:var(--yellow);
+    border-top: 1px solid yellow;
+    color:var(--yellow);
     width: 90px;
-    margin-top:-.9rem;
+    margin-top:-1.5rem;
     margin-left: 52rem;
 }
  .bi2{
 
-    background-color:gray;
-    width: 140rem;
-     margin:  5rem 30rem;
-} 
+    border-top: 1px solid yellow;
+    width: 9rem;
+    margin-left: 142rem;
 
-  #image1{
-      width:60rem;
-      
-
-  }
+}
+    
+.hr1{
+  width: 55px;
+  position: absolute;
+  margin:-7.4rem 50rem;
+  border: 1px solid var(--yellow);
+}
+.hr2{
+  width: 55px;
+  position: absolute;
+  margin:-7.4rem 150rem;
+  border: 1px solid var(--yellow);
+}
   .about-heading{
     color: white;
     text-align: center;
@@ -215,18 +221,18 @@ button{
 }
   .about-title{
     position: relative;
-    margin:25rem 10rem 0rem 30rem;
+    margin:25rem 8rem 5rem 30rem;
     width:520px;
     
   }
  
- .rel .about-title:before{
+ .about .about-title:before{
       
       position:absolute;
       content:"";
       top:6rem;
       bottom:3px;
-      right:-90px;
+      right:-78px;
       left:5rem;
       z-index: -1;
       transform: translate3d(26px, 26px,-26px);
@@ -241,8 +247,13 @@ button{
     line-height: 7.5px;
 
 }
+
+
+ 
+
 .adress1{
     margin-top: 12rem;
+    
 }
 .adress2{
     padding-left: 40rem;
@@ -252,4 +263,178 @@ button{
     margin:5rem 20rem 20rem 100rem;
     width: 40rem;
 
+}
+.experience{
+    font-size: 20px;
+    padding: 20rem;
+    display: flex;
+}
+.education{
+    margin-left: 10rem;
+    
+}
+.cv-titl{
+  font-size: 24px;
+}
+.percentage li{
+  display:inline-block;
+ 
+}
+.percentage hr{
+  width: 40rem;
+  
+}
+.perc2{
+  position:relative;
+  top:-45rem;
+  left:60rem; 
+
+}
+.perc3{
+  position:relative;
+  top:-90rem;
+  left:120rem;
+  
+}
+.circle{
+    border-right: 2px solid var(--yellow);
+    position: relative;
+  
+}
+.circle::after {
+      content: '';
+    position: absolute;
+    bottom: 10px;
+    right: -8px;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    border: 2px solid var(--yellow);
+    transform: translate(-74rem, -2rem);
+    z-index: 1;
+
+}
+.wrapper{
+    display: inline-flex;
+  }
+  .wrapper .static-txt{
+    font-size: 60px;
+    color: white;
+    font-weight: 600;
+    padding-left: 10rem;
+
+  }
+  .wrapper .dynamic-txt{
+  margin-left: 1rem;
+  height: 90px;
+  line-height: 90px;
+  overflow: hidden;
+    
+  }
+  .dynamic-txt li{
+    color: var(--yellow);
+    list-style: none;
+    font-size: 60px;
+    font-weight: 500;
+    top: 0;
+    position: relative;
+    animation: slide 6s steps(4) infinite;
+    
+  }
+  @keyframes slide {
+    100%{
+     top: -360px;
+    }
+  }
+  .dynamic-txt li b{
+    position: relative;
+  }
+  .dynamic-txt li b::after{
+    content: "";
+    position: absolute;
+    height: 120%;
+    width: 100%;
+    border-left: 2px solid transparent;
+    left: 0%;
+    animation:slide 4s steps(8) infinite;
+    background: black;
+    
+  }
+  @keyframes typing {
+    100%{
+      left: 100%;
+      margin: 0 -35px 0 35px;
+    }
+  }
+  .skills{
+      position: relative;
+      color: white;
+      font-size: 2.5rem;
+      display: inline-block;
+      list-style: none;
+      margin-left: 20rem;
+  }
+.project img{
+  position: relative;
+    display: grid(3);
+    padding-left: 9rem;
+    margin: 2rem 0rem;
+    width: 65rem;
+    
+    
+}
+.class-left{
+    padding: 4rem 5rem 10rem 20rem;
+    font-size: 2.4rem;
+   height: 60rem;
+   line-height: 2;
+   width: 200rem;
+}
+.class-right p{
+    display: flex;
+    padding: 4rem 8rem 4rem 17rem;
+    width: 150rem;
+}
+.class-right{
+  margin-bottom: 80px;
+}
+.contact-space{
+    display: flex;
+}
+.input{
+  padding: 70rem;
+}
+.blog {
+  display: grid;
+  grid-template-columns:repeat(2,1fr);
+  color: white;
+  padding-left:15rem ;
+
+}
+.blog img{
+margin:10rem 10rem 5rem 5rem;
+position: relative;
+}
+.blog-img:hover{
+  transform: scale(1.1,1.1);
+  transition: 0.5s;
+}
+.blog h1{
+  font-size: 24px;
+  padding-left:5rem ;
+  padding-bottom:2rem;
+  
+}
+.blog p{
+  font-size:18px ;
+  line-height: .7;
+  padding-left:5rem ;
+
+}
+.blog3 {
+  /* margin:0rem 90rem; */
+}
+.p-blog{
+  color: white;
+  text-align: center;
 }
