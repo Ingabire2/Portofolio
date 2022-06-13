@@ -8,20 +8,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <link href="https:
+    //fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
     <link type="text/css" media="all" href="css/font-awesome.min.css" rel="stylesheet">
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
-  
   <body>
-        <header class="header">
+        <header id="header">
            
           <nav  >
           <div class="menu"id="myMenu">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><ion-icon name="close-outline" style="font-size:40px;"></ion-icon></a>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><ion-icon name="close-outline" style="font-size:24px;"></ion-icon></a>
             <a href="" class="nav-link active"><ion-icon name="home"></ion-icon>&nbsp;Home</a>
             <a href="about.html" class="nav-link"><ion-icon name="person"></ion-icon>&nbsp;About</a>
             <a href="portofolio.html" class="nav-link"><ion-icon name="calendar"></ion-icon>&nbsp;Portofolio </a>
@@ -32,9 +32,10 @@
         <!-- <label for="menu-icon"></label> -->
         <ion-icon name="menu-outline"  id="menu-icon"style="cursor:pointer" onclick="openNav()"></ion-icon>
          
-      </header> 
+      </header>
       
-      <div class="home" >
+      
+      <section id="home" >
         <img src=" images/myself.jpeg" alt="Myself" class="image">
         <div class="home-title">
          
@@ -66,10 +67,9 @@
         <ion-icon class="settings" name="settings"></ion-icon>
       </div>
      
-      </div>
        <script>
         function openNav() {
-          document.getElementById("myMenu").style.width = "500px";
+          document.getElementById("myMenu").style.width = "250px";
         
         }
         
@@ -91,5 +91,6 @@
           }
         
         </script> -->
+      </section>
   </body>
 </html>
