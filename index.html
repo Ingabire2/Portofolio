@@ -21,7 +21,7 @@
            
           <nav  >
           <div class="menu"id="myMenu">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><ion-icon name="close-outline" style="font-size:24px;"></ion-icon></a>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav(true)"><ion-icon name="close-outline" style="font-size:24px;"></ion-icon></a>
             <a href="" class="nav-link active"><ion-icon name="home"></ion-icon>&nbsp;Home</a>
             <a href="about.html" class="nav-link"><ion-icon name="person"></ion-icon>&nbsp;About</a>
             <a href="portofolio.html" class="nav-link"><ion-icon name="calendar"></ion-icon>&nbsp;Portofolio </a>
@@ -30,17 +30,25 @@
           </div>
         </nav>
         <!-- <label for="menu-icon"></label> -->
-        <ion-icon name="menu-outline"  id="menu-icon"style="cursor:pointer" onclick="openNav()"></ion-icon>
+        <ion-icon name="menu-outline"  id="menu-icon"style="cursor:pointer" onclick="openNav(false)"></ion-icon>
          
       </header>
       
       
       <section id="home" >
-        <img src=" images/myself.jpeg" alt="Myself" class="image">
+        <div class="flex">
+        <img src=" images/myself1.jpeg" alt="Myself" class="image">
+
+
+
+        
         <div class="home-title">
-         
       <h2 class="hi">HI THERE !</h2> <br> 
-      <div class="wrapper">
+      <h1 style="color:white;padding-left:100px;z-index:200;">I'M
+        <marquee style="color: rgb(255, 157, 0);transform: translate(0,-40px);font-weight: 600; margin-left: 60px;">IMMACULATE INGABIRE A WEB DESIGNER</marquee></h1>
+      
+      
+      <!-- <div class="wrapper">
         <div class="static-txt">I'M</div>
             <ul class="dynamic-txt">
     <li> <b>IMMACULATE INGABIRE</b>
@@ -54,8 +62,8 @@
     
     
             </ul>
-    </div>
-      
+    </div> -->
+  
         <!-- <h1 class="Iam">I'M <span style="color:#ffc107;" >IMMACULATE&nbsp;INGABIRE  </span></h1> -->
        <p class="home-paragraph"> 
          I'm a Freelance UI/UX Designer and Developer based in Kigali, Rwanda.<br> 
@@ -66,7 +74,7 @@
       
         <ion-icon class="settings" name="settings"></ion-icon>
       </div>
-     
+    </div>
        <script>
         function openNav() {
           document.getElementById("myMenu").style.width = "250px";

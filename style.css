@@ -117,26 +117,31 @@ body{
 }
 .image{
     position:absolute;
-    width: 40%;
+    width: 35%;
     height: 100%;
-    top:5rem;
     left: 10rem;
     object-fit: cover;
     z-index: -1;
   }
+  .flex{
+    display: flex;
+    flex-wrap: wrap;
+   
+}
 .home-title{
-    position: relative;
-    top: 17rem;
-    color: white;
-    right: -48rem;
-    margin:1px 0;
+  padding-left: 27rem;
+  margin-left:8rem ;
+  padding-top: 10rem;
 }
 .home-paragraph{
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     line-height:1.8;
-    padding: 0 10rem;
+    padding: 0 10rem; 
+    width: 80rem;
 }
-
+.home-paragraph,.home-title h2 {
+  color: whitesmoke;
+}
 .hi{
     font-weight: lighter;
     font-size:2rem;
@@ -203,23 +208,38 @@ body{
 
     
 .hr1{
-  width: 45px;
-  position: absolute;
-  margin:-1rem 50rem;
+  width: 40px;
+  margin-left: 27rem;
   border: 1px solid #ffc107;
+  transform: translate(10px,-12px);
 }
 .hr2{
-  width: 45px;
-  position: absolute;
-  margin:-1rem 100rem;
+  width: 40px;
   border: 1px solid #ffc107;
+  margin-right: 28rem;
+  transform: translate(0px,-26px);
+}
+.hr3{
+  width: 40px;
+  /* margin-left: 17rem; */
+  border: 1px solid #ffc107;
+  transform: translate(28rem,-14px);
+}
+.hr4{
+  width: 40px;
+  border: 1px solid #ffc107;
+  /* margin-right: 28rem; */
+  transform: translate(-28rem,-20px);
 }
   .about-heading{
     color: white;
     text-align: center;
     justify-content: center;
-    margin: 3rem auto;
+    /* margin: 5rem auto; */
     
+}
+.class-right form{
+  padding-left:120px ;
 }
 .about-title img{
   width: 340px;
@@ -366,11 +386,11 @@ body{
 }
 
 
-.wrapper{
+/* .wrapper{
     display: inline-flex;
   }
   .wrapper .static-txt{
-    font-size: 40px;
+    font-size: 38px;
     color: white;
     font-weight: 600;
     padding-left: 10rem;
@@ -386,13 +406,13 @@ body{
   .dynamic-txt li{
     color: var(--yellow);
     list-style: none;
-    font-size: 40px;
+    font-size: 38px;
     font-weight: 500;
     top: -20px;
     position: relative;
-    animation: slide 3s steps(4) infinite;
-    transition: 5s;
-  }
+    animation: slide 4s steps(4) infinite;
+    /* transition: 5s; */
+  /* }
   @keyframes slide {
     100%{
      top: -360px;
@@ -404,20 +424,20 @@ body{
   .dynamic-txt li b::after{
     content: "";
     position: absolute;
-    height: 120%;
+    height: 100%;
     width: 100%;
-    border-left: 2px solid transparent;
+    border-left: 1px solid transparent;
     left: 0%;
-    animation:slide 8s steps(4) infinite;
+    animation:typing 6s steps(10) infinite;
     background: black;
     
   }
   @keyframes typing {
     100%{
       left: 100%;
-      margin: 0 -35px 0 35px;
+      /* margin: 0 -35px 0 35px; */
     }
-  }
+  } */ */
   .skills{
       position: relative;
       color: white;
@@ -428,23 +448,25 @@ body{
   }
 
 .class-left{
-    padding: 4rem 8rem 0rem 15rem;
+    /* padding: 4rem 8rem 0rem 15rem; */
     font-size: 1.6rem;
    height: 80rem;
    line-height: 1.5;
-   /* width: 200rem; */
+   margin-left: 100px;
+   width: 200px;
 }
 .class-right p{
     display: flex;
   
-    padding: 4rem 8rem 0rem 17rem;
+    /* padding: 4rem 8rem 0rem 17rem; */
     /* width: 150rem; */
 }
-/* .class-right{
-  margin-bottom: 80px;
-} */
+ .class-right{
+  margin-left: 40px;
+} 
 .contact-space{
     display: flex;
+    margin-top: 20px;
 }
 .input{
   padding: 70rem;
